@@ -59,13 +59,39 @@ extension XCUIElement {
     
     func swipeUpToElement(element: XCUIElement, app: XCUIApplication) {
         while self.elementIsInTheWindow(element: element) == false {
-            app.swipeUp()
+            app.gentleSwipe(.up)
         }
     }
     
     func swipeDownToElement(element: XCUIElement, app: XCUIApplication) {
         while self.elementIsInTheWindow(element: element) == false {
-            app.swipeDown()
+            app.gentleSwipe(.down)
+        }
+    }
+    
+    enum direction : Int {
+        case up, down
+    }
+    
+    func gentleSwipe(_ direction : direction) {
+        let half : CGFloat = 0.5
+        let adjustment : CGFloat = 0.25
+        let pressDuration : TimeInterval = 0.05
+
+        let lessThanHalf = half - adjustment
+        let moreThanHalf = half + adjustment
+
+        let centre = self.coordinate(withNormalizedOffset: CGVector(dx: half, dy: half))
+        let aboveCentre = self.coordinate(withNormalizedOffset: CGVector(dx: half, dy: lessThanHalf))
+        let belowCentre = self.coordinate(withNormalizedOffset: CGVector(dx: half, dy: moreThanHalf))
+
+        switch direction {
+        case .up:
+            centre.press(forDuration: pressDuration, thenDragTo: aboveCentre)
+            break
+        case .down:
+            centre.press(forDuration: pressDuration, thenDragTo: belowCentre)
+            break
         }
     }
 }
