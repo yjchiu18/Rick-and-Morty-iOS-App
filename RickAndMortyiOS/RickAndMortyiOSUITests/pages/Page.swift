@@ -35,7 +35,7 @@ class Page {
     func typeText(element: XCUIElement, text: String) {
         waitFor(element: element, status: .exist)
         element.typeText(text)
-        element.typeText("\n")
+//        element.typeText("\n")
     }
     
     func waitFor(element: XCUIElement, status: UIState, timeout: Int = 10) {

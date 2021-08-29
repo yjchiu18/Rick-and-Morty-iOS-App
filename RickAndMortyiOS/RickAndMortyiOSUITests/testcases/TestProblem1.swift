@@ -17,8 +17,8 @@ class TestProblem1: XCUITestCase {
     }
     func test_2_GoToDetailPageThenBackToMainPage() {
         test
-            .on(page: MainPage.self).selectProfile("Blim Blam")
-            .on(page: CharacterPage.self).assertCharacter(name: "Blim Blam", gender: "Male", species: "Alien")
+            .on(page: MainPage.self).selectProfile("Alien Rick")
+            .on(page: CharacterPage.self).assertCharacter(name: "Alien Rick", gender: "Male", species: "Alien")
             .on(page: CharacterPage.self).backToMainPage()
     }
     
