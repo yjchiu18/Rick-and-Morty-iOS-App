@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "D524316F-C2DD-4BF7-9689-2D7EDD1C30FA",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "skippedTests" : [
+        "RickAndMortyiOSUITests",
+        "XCUITestCase"
+      ],
+      "target" : {
+        "containerPath" : "container:RickAndMortyiOS.xcodeproj",
+        "identifier" : "84081514254D86A0003655D2",
+        "name" : "RickAndMortyiOSUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

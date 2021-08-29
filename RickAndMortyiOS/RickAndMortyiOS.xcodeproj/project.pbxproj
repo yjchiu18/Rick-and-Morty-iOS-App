@@ -70,6 +70,13 @@
 		84F4F14A257B950B00A686A8 /* UITableView+EmptyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4F149257B950B00A686A8 /* UITableView+EmptyMessage.swift */; };
 		84F4F14F257B9B1C00A686A8 /* RickAndMortyCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4F14E257B9B1C00A686A8 /* RickAndMortyCharacter.swift */; };
 		84F4F154257B9C8500A686A8 /* NetworkService+Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F4F153257B9C8500A686A8 /* NetworkService+Characters.swift */; };
+		9314F8C326D5445D000D9917 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9314F8C226D5445D000D9917 /* Page.swift */; };
+		9314F8C526D547DA000D9917 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9314F8C426D547DA000D9917 /* MainPage.swift */; };
+		9314F8C726D54F30000D9917 /* XCUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9314F8C626D54F30000D9917 /* XCUITestCase.swift */; };
+		9314F8C926D55355000D9917 /* TestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9314F8C826D55355000D9917 /* TestBuilder.swift */; };
+		9314F8CC26D554B3000D9917 /* TestProblem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9314F8CB26D554B3000D9917 /* TestProblem1.swift */; };
+		9314F8CE26D604CB000D9917 /* CharacterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9314F8CD26D604CA000D9917 /* CharacterPage.swift */; };
+		93B482C526D794F20019524C /* TestCaseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B482C426D794F20019524C /* TestCaseObserver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +173,14 @@
 		84F4F149257B950B00A686A8 /* UITableView+EmptyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyMessage.swift"; sourceTree = "<group>"; };
 		84F4F14E257B9B1C00A686A8 /* RickAndMortyCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyCharacter.swift; sourceTree = "<group>"; };
 		84F4F153257B9C8500A686A8 /* NetworkService+Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Characters.swift"; sourceTree = "<group>"; };
+		9314F8C226D5445D000D9917 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		9314F8C426D547DA000D9917 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		9314F8C626D54F30000D9917 /* XCUITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestCase.swift; sourceTree = "<group>"; };
+		9314F8C826D55355000D9917 /* TestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBuilder.swift; sourceTree = "<group>"; };
+		9314F8CB26D554B3000D9917 /* TestProblem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProblem1.swift; sourceTree = "<group>"; };
+		9314F8CD26D604CA000D9917 /* CharacterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPage.swift; sourceTree = "<group>"; };
+		933AEC1C26D9362D004AECC0 /* RickAndMortyiOSUITest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RickAndMortyiOSUITest.xctestplan; sourceTree = "<group>"; };
+		93B482C426D794F20019524C /* TestCaseObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseObserver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +271,10 @@
 		84081518254D86A0003655D2 /* RickAndMortyiOSUITests */ = {
 			isa = PBXGroup;
 			children = (
+				933AEC1C26D9362D004AECC0 /* RickAndMortyiOSUITest.xctestplan */,
+				93B482C626D7CD540019524C /* helper */,
+				9314F8CA26D55481000D9917 /* testcases */,
+				9314F8C126D543D3000D9917 /* pages */,
 				84081519254D86A0003655D2 /* RickAndMortyiOSUITests.swift */,
 				8408151B254D86A0003655D2 /* Info.plist */,
 			);
@@ -458,6 +477,34 @@
 				84ED0EEE25612CC1009CDC87 /* APIError.swift */,
 			);
 			path = "Error Models";
+			sourceTree = "<group>";
+		};
+		9314F8C126D543D3000D9917 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				9314F8C226D5445D000D9917 /* Page.swift */,
+				9314F8C426D547DA000D9917 /* MainPage.swift */,
+				9314F8CD26D604CA000D9917 /* CharacterPage.swift */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		9314F8CA26D55481000D9917 /* testcases */ = {
+			isa = PBXGroup;
+			children = (
+				9314F8CB26D554B3000D9917 /* TestProblem1.swift */,
+			);
+			path = testcases;
+			sourceTree = "<group>";
+		};
+		93B482C626D7CD540019524C /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				9314F8C626D54F30000D9917 /* XCUITestCase.swift */,
+				9314F8C826D55355000D9917 /* TestBuilder.swift */,
+				93B482C426D794F20019524C /* TestCaseObserver.swift */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -692,6 +739,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8408151A254D86A0003655D2 /* RickAndMortyiOSUITests.swift in Sources */,
+				9314F8C926D55355000D9917 /* TestBuilder.swift in Sources */,
+				9314F8C726D54F30000D9917 /* XCUITestCase.swift in Sources */,
+				9314F8CC26D554B3000D9917 /* TestProblem1.swift in Sources */,
+				9314F8CE26D604CB000D9917 /* CharacterPage.swift in Sources */,
+				93B482C526D794F20019524C /* TestCaseObserver.swift in Sources */,
+				9314F8C326D5445D000D9917 /* Page.swift in Sources */,
+				9314F8C526D547DA000D9917 /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -868,7 +922,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTMVBPSRA5;
+				DEVELOPMENT_TEAM = G7WXCEU2YX;
 				INFOPLIST_FILE = RickAndMortyiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -889,7 +943,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTMVBPSRA5;
+				DEVELOPMENT_TEAM = G7WXCEU2YX;
 				INFOPLIST_FILE = RickAndMortyiOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -909,7 +963,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTMVBPSRA5;
+				DEVELOPMENT_TEAM = G7WXCEU2YX;
 				INFOPLIST_FILE = RickAndMortyiOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -932,7 +986,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTMVBPSRA5;
+				DEVELOPMENT_TEAM = G7WXCEU2YX;
 				INFOPLIST_FILE = RickAndMortyiOSTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -954,7 +1008,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTMVBPSRA5;
+				DEVELOPMENT_TEAM = G7WXCEU2YX;
 				INFOPLIST_FILE = RickAndMortyiOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -974,7 +1028,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTMVBPSRA5;
+				DEVELOPMENT_TEAM = G7WXCEU2YX;
 				INFOPLIST_FILE = RickAndMortyiOSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -995,7 +1049,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTMVBPSRA5;
+				DEVELOPMENT_TEAM = G7WXCEU2YX;
 				INFOPLIST_FILE = RickAndMortyWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1017,7 +1071,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTMVBPSRA5;
+				DEVELOPMENT_TEAM = G7WXCEU2YX;
 				INFOPLIST_FILE = RickAndMortyWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
