@@ -8,7 +8,7 @@ class CharacterPage: Page {
     required init(_ app: XCUIApplication) {
         super.init(app)
         sleep(1)
-        print(tag, XCUIApplication().debugDescription)
+//        print(tag, XCUIApplication().debugDescription)
     }
     
     @discardableResult
